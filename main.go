@@ -15,7 +15,7 @@ import (
 var url = os.Getenv("WEBHOOK_URL")
 
 func getMessage() string {
-	text := "It is Wednesday, my dudes!"
+	text := "It is **Wednesday**, my dudes!"
 	img := os.Getenv("IMG_URL")
 
 	return fmt.Sprintf(`{"blocks": [{"type": "section","text": {"type": "mrkdwn","text": "%s"},"accessory": {"type": "image","image_url": "%s","alt_text": "frog"}}]}`, text, img)
