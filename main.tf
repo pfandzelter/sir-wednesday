@@ -17,7 +17,7 @@ resource "aws_lambda_function" "sir-wednesday" {
   role             = aws_iam_role.sir-wednesday-role.arn
   runtime          = "go1.x"
   memory_size      = 128
-  timeout          = 1
+  timeout          = 2
 
   environment {
     variables = {
